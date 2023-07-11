@@ -2,337 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image"  href="./assets/logo.jpg"/>
-    <link rel="stylesheet" href="./spotify.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify-Web Player Music For Everyone</title>
+    <link rel="icon" href="./assets2/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spotify2.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <a href="#"><img src="./assets/logo2.png" alt="logo"/></a>
-        </div>
-    
-    <div class="nav">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="home"><img src="./assets/home.png" height="15px" width="15px" alt="home"></span>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="search"><img src="./assets/search3.jpg" heigjt="15px" width="15px" alt="search"></span>
-                    <span>Search</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="lib"><img src="./assets/lib.jpg" height="13px" width="13px" alt=""></span>
-                    <span>Your Library</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="nav">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="playlist"><img src="./assets/playlist.jpg" height="13px" width="13px" alt="playlist"></span>
-                    <span>Create Playlist</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="heart"><img src="./assets/liked.jpeg" heigjt="13px" width="13px" alt="liked"></span>
-                    <span>Liked Songs</span>
-                </a>
-            </li>
-            
-        </ul>
-    </div>
-    <div class="policies">
-        <ul>
-            <li>
-                <a href="#">Cookies</a>
-            </li>
-            <li>
-                <a href="#">Privacy</a>
-            </li>
-            <li>
-                <a href="#">About Ads</a>
-            </li>
-            <li>
-                <a href="#">Accessibility</a>
-            </li>
-            
-        </ul>
-    </div>
-    </div>
-    <div class="main-container">
-        <div class="topbar">
-            <div class="prev-next-buttons">
-                <button type="button" class="but1"><img src="./assets/prev.jpg" height="25px" width="25px" alt="prev"></button>
-                <button type="button" class="but2"><img src="./assets/next.jpg" height="25px" width="25px"  alt="next"></button>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+                
             </div>
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="#">Premium</a>
-                    </li>
-                    <li>
-                        <a href="#">Support</a>
-                    </li>
-                    <li>
-                        <a href="#">Download</a>
-                    </li>
-                    <li class="divider">|
+            <div class="library">
+                <div class="lib">
+                    <div class="lib-option nav-option">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                        <img src="./assets2/library_icon.png" alt="library">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                     <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                     </div>
+                     <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                     </div>
+                </div>
+            </div>
+            <div class="album-list">
+                 <div class="daylight"><img src="./assets2/album_picture.jpeg" alt=""></div>
+                  <div class="song"><p class="p1">Daylight</p><p class="p2">David Kushner</p></div>
+                  <div class="album-icons"><img class="img1" src="./assets2/album_icon1.png" style="opacity: 0.7;"><img src="./assets2/album_icon2.png" alt=""></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                <img src="./assets2/backward_icon.png" alt="left">
+                <img class="hide" src="./assets2/forward_icon.png" alt="right"></div>
+                <div class="sticky-nav-btns">
+                <button class="badge nav-item hide">Explore premium</button>
+                <button class="badge nav-item darkbadge"><i class="fa-sharp fa-regular fa-circle-down " style="margin-right:5px;"></i>Install App</button>
+                <i class="fa-regular fa-user"></i></div>
+            </div>
+            
+            <h2>Recently played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets2/card1img.jpeg" class="card-img" alt="top 50">
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">Your daily updates of the most played tricks right...</p>
+                    </div>
+                </div><br><br><br>
 
-                    </li>
-                    <li>
-                        <a href="#">Sign Up</a>
-                    </li>
-                </ul>
-                <button type="button" >Log In</button>
+                <h2>Trending now near you</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets2/card2img.jpeg" class="card-img" alt="top 50">
+                        <p class="card-title">Top 50-Hits</p>
+                        <p class="card-info">Focus with soft study music in the...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets2/card3img.jpeg" class="card-img" alt="top 50">
+                        <p class="card-title">Top 50-Hits</p>
+                        <p class="card-info">70's pops hit different...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets2/card4img.jpeg" class="card-img" alt="top 50">
+                        <p class="card-title">Top 50-Hits</p>
+                        <p class="card-info">Party pop...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/punjabi.jpg" class="card-img" alt="top 50">
+                        <p class="card-title">Top 50-Hits</p>
+                        <p class="card-info">Karan Aujla,Armanan Malik,Shubh,Arjan Dhill...</p>
+                    </div>
+                </div><br><br><br>
+                <h2>Featured Charts</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets2/card5img.jpeg" class="card-img" alt="top 50">
+                        <p class="card-title">Top Songs-Global</p>
+                        <p class="card-info">Your daily updates of the most played tricks right...</p>
+                    </div>
+                    <div class="card">
+                            <img src="./assets2/card6img.jpeg" class="card-img" alt="top 50">
+                            <p class="card-title">Top Songs-India</p>
+                            <p class="card-info">Your daily updates of the most played tricks right...</p>
+                            </div>
+                    <div class="card">
+                                <img src="./assets2/card1img.jpeg" class="card-img" alt="top 50">
+                                <p class="card-title">Top Hollywood Hits</p>
+                                <p class="card-info">Romantic hits...</p>
+                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    
+        </div>
+        <div class="footer">
+            <div class="line"></div>
+        </div>
+        <div class="music-player">
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assets2/player_icon1.png" class="player-control-icon" alt="">
+                    <img src="./assets2/player_icon2.png" class="player-control-icon" alt="">
+                    <img src="./assets2/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 20px;width: 20px;" alt="">
+                    <img src="./assets2/player_icon4.png" class="player-control-icon" alt="">
+                    <img src="./assets2/player_icon5.png" class="player-control-icon" alt="">
+                </div>
+                <div class="playback-bar">
+                    <span class="current-time">00:00</span>
+                    <input type="range" min="0" max="0" class="progress-bar" step="1">
+                    <span class="tot-time">3:33</span>
+                </div>
             </div>
+                
+            </div>
+            <div class="controls">
+                <div class="control-icon">
+                    <img src="./assets2/controls_icon1.png"  alt="">
+                    <img src="./assets2/controld_icon2.png"  alt="">
+                    <img src="./assets2/controls_icon3.png"  alt="">
+                    <img src="./assets2/controls_icon4.png"  alt="">
+                    <img src="./assets2/controls_icon5.png"  alt=""> 
+                </div>
+            </div>
+            <!-- <div class="controls"></div> -->
         </div>
     </div>
-    <div class="spotify-playlists">
-        <h2>Spotify Playlists</h2>
-        <div class="list">
-            <div class="item"><img src="./assets/e1.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Today's top Hits</h4>
-            <p>Shawn Mendes is on top of the..</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/e3.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Jake Owens songs</h4>
-            <p>New Music From Lil Baby...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/e4.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Taylor Swift Hits</h4>
-            <p>look what the Queen dropped...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/e5.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Deep Focus</h4>
-            <p>Keep Calm and focus on the ambient post...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/e6.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Instrumental study</h4>
-            <p>Focus with soft study music in the...</p>
-            </div>
-        </div>
-        <h2>Punjabi Hits</h2>
-        <div class="list">
-            <div class="item"><img src="./assets/punjabi.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top 50 Hits</h4>
-            <p>Karan Aujla,Armanan Malik,Shubh,Arjan Dhill...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/radhawa.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Guru songs</h4>
-            <p>Guru Randhawa's Top Hits...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/pj4.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Jass Manak Hits</h4>
-            <p>After Prada Listen What's Getting Hit...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/pj3.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Punjabi 2023</h4>
-            <p>Kakkar's got nominated to Grammy, from this...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/honey.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Yo Yo Honey Singh</h4>
-            <p>Listen to the King of 2G-3G Era...</p>
-            </div>
-        </div>
-        <h2>Moody Mellows</h2>
-        <div class="list">
-            <div class="item"><img src="./assets/party.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top Party Pops</h4>
-            <p>Enlighten clubbings,parties with...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/romantic.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Love songs</h4>
-            <p>Don't ruin your date ,pick good songs ...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/old.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top Bollywood Hits</h4>
-            <p>Songs from 2000's...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/sad.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Sad Hits</h4>
-            <p>Got low , listen to...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/bhoj.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Pawan Singh</h4>
-            <p>You cannot resist dancing on...</p>
-            </div>
-        </div>
-        
-        <h2>Sounds Of India</h2>
-        
-        <div class="list">
-            <div class="item"><img src="./assets/mumbai.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top Mumbai Songs</h4>
-            <p>The songs that define,unite and distinguish...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/kolkata.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top Kolkata Songs</h4>
-            <p>The songs that define,unite and distinguish ...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/delhi.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top Delhi Songs</h4>
-            <p>The songs that define,unite and distinguish...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/bengaluru.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top Bengaluru Songs</h4>
-            <p>The songs that define,unite and distinguish...</p>
-            </div>
-        </div>
-        <div class="list">
-            <div class="item"><img src="./assets/chennai.jpg" />
-            <div class="play">
-                <span class="play-audio"><img src="./assets/play.jpg" alt=""></span>
-            </div>
-            <h4>Top Chennai Songs</h4>
-            <p>The songs that define,unite and distinguish...</p>
-            </div>
-        </div>
-        
-    </div>
-    <div class="links">
-        <div class="company">
-            <ul>
-                <li class="comp">Company</li>
-                <li>About</li>
-                <li>Jobs</li>
-                <li>For The Record</li>
-            </ul>
-        </div>
-        <div class="Communities">
-            <ul>
-                <li class="comm">Communities</li>
-                <li>For Artists</li>
-                <li>Developers</li>
-                <li>Advertising</li>
-                <li>Investors</li>
-                <li>Spotify For Work</li>
-            </ul>
-        </div>
-        <div class="useful">
-            <ul>
-                <li class="use">Useful Links</li>
-                <li>Free Mobile App</li>
-            </ul>
-        </div>
-        <div class="socialmedia">
-        <div class="insta"><a href="#"><img src="./assets/insta.jpg" height="20px" width="30px" alt="insta"></a></div>
-        <div class="twitter"><a href="#"><img src="./assets/twitter.jpg" height="25px" width="30px"  alt="twit"></a></div>
-        <div class="fb"><a href="#"><img src="./assets/fb.jpg" height="20px" width="30px"  alt="fb"></a></div>
-        </div>
-        <!-- <br class="line"> -->
-    </div>
-    <div class="end">
-        &copy;Spotify Sujal
-    </div>
-    <div class="preview">
-        <div class="text">
-            <h6>Preview of Spotify</h6>
-            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
-        </div>
-        <div class="button">
-            <button type="button">Sign up free</button>
-        </div>
-    </div>
-    <!-- <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script> -->
 </body>
 </html>
